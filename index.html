@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/mescroll.min.css">
+    <style media="screen">
+      div.fa{
+        width: 1000px;
+        height: 4px;
+        border: 1px solid #ccc;
+        margin: 30px auto;
+      }
+      div.ch {
+        width: 0;
+        height: 4px;
+        background: #00f;
+      }
+    </style>
+    <script type="text/javascript">
+      var t1 = new Date().getTime();
+      console.log(t1);
+    </script>
+
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/vue/2.5.9/vue.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/echarts/3.8.5/echarts.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/vue/2.5.9/vue.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/echarts/3.8.5/echarts.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/vue/2.5.9/vue.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/echarts/3.8.5/echarts.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/vue/2.5.9/vue.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/echarts/3.8.5/echarts.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/vue/2.5.9/vue.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/echarts/3.8.5/echarts.js"></script>
+    <script defer onload="fn()"  src="https://cdn.bootcss.com/Chart.js/2.7.1/Chart.js"></script>
+
+  </head>
+  <body>
+    <h1></h1>
+    <div class="app">
+        {{msg}}
+    </div>
+
+    <div class="fa">
+      <div class="ch">
+
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var t2 = new Date().getTime();
+      console.log(t2);
+      console.log('用时：',t2-t1);
+      document.querySelector('h1').innerHTML = (t2-t1) + 'ms';
+      document.querySelector('h1').style.color = '#f00';
+    </script>
+
+    <script type="text/javascript">
+
+      var num = null;
+      var g = 20;
+      function fn(){
+        // console.log(Vue);
+        // var el = new Vue({
+        //   el:'.app',
+        //   data: {
+        //     msg: 'jdsfljksld'
+        //   }
+        // })
+
+        num += 100/g;
+
+        document.getElementsByClassName('ch')[0].style.width = 10 * num + 'px';
+
+      }
+
+    </script>
+
+  </body>
+</html>
